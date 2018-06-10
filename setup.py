@@ -1,11 +1,6 @@
 from setuptools import setup, find_packages
 
 
-def readme():
-    with open('README.md') as f:
-        return f.read()
-
-
 setup(name='projectname',
       version='0.0.1',
       py_modules=['modules'],

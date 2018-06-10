@@ -17,18 +17,18 @@ class TestSample(TestCase):
     def runTest(self):
         # run cli normally
         result = self.runner.invoke(cli)
-        output_string = str(result.output.encode('ascii', 'ignore'))
+        output_string = str(result.output.encode('ascii', 'ignore').decode("utf-8"))
         self.assertEqual(0, result.exit_code)
         self.assertEqual("Hello, fellow Python programmer!!\n", output_string)
 
         # run with name only
         result = self.runner.invoke(cli, ['Man'])
-        output_string = str(result.output.encode('ascii', 'ignore'))
+        output_string = str(result.output.encode('ascii', 'ignore').decode("utf-8"))
         self.assertEqual(0, result.exit_code)
         self.assertEqual("Hello, Man!!\n", output_string)
 
         # run with name and flag
         result = self.runner.invoke(cli, ['--count', '2', 'Man'])
-        output_string = str(result.output.encode('ascii', 'ignore'))
+        output_string = str(result.output.encode('ascii', 'ignore').decode("utf-8"))
         self.assertEqual(0, result.exit_code)
         self.assertEqual("Hello, Man!!\nHello, Man!!\n", output_string)
