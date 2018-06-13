@@ -23,6 +23,11 @@
 - Turn on detection for builds for this repo in travis.
 - Push and it should run build and generate coverage report.
 
+## TODO
+- Create a [cookiecutter](https://github.com/audreyr/cookiecutter) template out of this.
+- add some sophisticated commands as examples
+- add examples of some advanced functionalities in click, like using `contexts`, custom `command groups` etc.
+
 ## LICENSE
 
 ```
