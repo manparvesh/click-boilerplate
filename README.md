@@ -28,6 +28,10 @@
 - add some sophisticated commands as examples
 - add examples of some advanced functionalities in click, like using `contexts`, custom `command groups` etc.
 
+## Similar options:
+
+- Use existing [cookiecutter](https://github.com/audreyr/cookiecutter) templates
+
 ## LICENSE
 
 ```
